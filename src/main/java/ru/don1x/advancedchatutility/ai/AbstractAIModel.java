@@ -3,7 +3,7 @@ package ru.don1x.advancedchatutility.ai;
 import java.util.HashSet;
 
 public abstract class AbstractAIModel {
-   public HashSet<String> badWords = new HashSet<>();
+   public final HashSet<BadWordsGroup> badWordsGroups = new HashSet<>();
    public final ModelFile modelFile;
 
    public AbstractAIModel(ModelFile modelFile)

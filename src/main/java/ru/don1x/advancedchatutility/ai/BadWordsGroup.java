@@ -5,11 +5,18 @@ import java.util.List;
 
 public final class BadWordsGroup {
    private final String groupName;
-   private final HashSet<String> words = new HashSet<>();
+   private final HashSet<String> words;
 
    public BadWordsGroup(String name)
    {
       this.groupName = name;
+      this.words = new HashSet<>();
+   }
+
+   public BadWordsGroup(String name, HashSet<String> words)
+   {
+      this.groupName = name;
+      this.words = words;
    }
 
    public HashSet<String> getWords() {

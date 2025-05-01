@@ -1,0 +1,6 @@
+name: AdvancedChatUtility
+version: '${project.version}'
+main: ru.don1x.advancedchatutility.AdvancedChatUtility
+api-version: '1.16'
+authors: [don1x]
+description: An advanced chat utility with AI and many other features.
